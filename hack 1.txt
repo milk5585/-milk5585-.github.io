@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대구광역시 축제-파워풀 대구 페스티벌</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex; /* 플렉스 박스 사용 */
+            flex-direction: column; /* 세로 정렬 */
+            align-items: center; /* 중앙 정렬 */
+            margin: 20px;
+            background-color: ivory; /* 배경색을 아이보리로 설정 */
+        }
+        .header {
+            display: inline-block; /* 가로로 정렬 */
+            background-color: #D2B48C; /* 제목의 배경색을 연한 갈색으로 설정 */
+            padding: 10px;
+            width: fit-content; /* 내용에 맞게 너비 설정 */
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+            display: inline; /* 가로로 배치 */
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .content {
+            margin-top: 20px;
+            max-width: 800px; /* 최대 너비 설정 */
+            text-align: center; /* 중앙 정렬 */
+        }
+        .search-box {
+            margin-top: 20px;
+        }
+        .search-box input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>대구 축제 알아보기</h1>
+    </div>
+    <div class="content">
+        <p>대구광역시는 매년, 매달 재미있는 행사 및 축제가 열린다는 사실을 알고 계신가요?? 이런 재미있는 축제 몰라서 못가면 너무 아쉽잖아요!! 대표적인 축제 2가지를 소개합니다! 이미 지난 축제이지만 올해 어떤 재미있는 활동을 하고 공연을 했는 지 알아보는 좋은 시간이 될 것 같아요~~ 궁금한 정보가 있으면 아래 버튼을 눌러 확인해보세요!-- ##다 읽은 뒤에 버튼을 한 번 더 눌러서 정보가 사라지도록 해주세요!##
+</p>
+
+    
+    <div>
+           <script>
+        function searchHighlight() {
+            const searchInput = document.getElementById('search-input').value.trim();
+            if (searchInput === '') return;
+
+            const content = document.querySelector('.content');
+            const regex = new RegExp(`(${searchInput})`, 'gi');
+            content.innerHTML = content.innerHTML.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼으로 내용 표시</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #content1, #content2 {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1" onclick="toggleContent('content1')">파워풀 대구 페스티벌</button>
+    <button id="btn2" onclick="toggleContent('content2')">2024 대구 약령시한방문화축제</button>
+
+    <div id="content1">
+        <h2>파워풀 대구 페스티벌</h2>
+        <p><b>2024 5월 11일부터 5월 12일</b>에 대구 축제 파워풀대구 페스티벌이 진행되었습니다.
+국채보상로에는 119개의 팀, 4천여 명의 퍼레이드 팀,
+천명의 거리예술 공연팀의 끊임없는 공연으로
+뜨거움이 가득 찼던 현장이었습니다
+
+파워풀대구 페스티벌의 전날 밤!
+동성로 28 대구아트스퀘어에서는 
+파워풀대구 페스티벌 전야제 
+무대가 꾸며졌습니다
+​
+전야제 무대는 각 나라의 10개의 팀이
+공연을 구성하였는데요
+​
+첫 번째 무대는 한국무용협회 
+제주도 특별자치도회의 무대​로
+본격적인 대구 축제 전야제 포문을 열었습니다                                                      
+두 번째 무대는 태국의 
+한 밴드팀이 무대를 꾸몄습니다
+마치 영국의 국악대가 연상되는 옷을 입고
+악기를 연주하며 중앙에는 태국 전통의상을
+입은 한 여성이 연주에 맞춰 동작을 취하는 
+모습이 신기했습니다
+​
+세 번째는 이웃나라인 일본입니다
+일본은 거리상으로 우리나라와 가깝지만
+문화적으로는 개성이 강한 나라인데요
+무대에 서있기만 해도  일본 그 특유의
+ 분위기를 잘 살려낸 팀이 아니었나 
+생각이 들었어요
+
+이번 전야제 무대에서 가장 인상 깊었던 팀은
+바로 말레이시아 팀이었습니다
+처음 등장부터 사람 키의 2배가 넘는 깃발로
+무대를 장악합니다
+
+그 뒤로 숨을 고를 시간도 주지 않고
+용이 등장했는데요
+ 
+용이 무대를 벗어나 관객 위까지 
+날아다니는 듯한 착각이 들 정도로
+눈을 떼기에 어려운 무대였습니다
+​
+말레이시아 팀은 태권도와 비슷한
+마샬아츠를 기반으로 한 
+절도 있는 공연을 선보였는데요
+우리나라의 태권도와 비교해서 관람한다면
+재미있는 포인트가 될 것 같아요
+​
+그다음 무대는 태국 정통 팀의 무대로 
+농사 과정과 쌀을 수확하는 순간까지를
+무대로 만들어 하나의 뮤지컬을 보는
+착각에 빠져들었어요
+​
+그 뒤로 이어지는 공연들도 각 나라마다의
+고유의 특징이 잘 나타나는 팀들의 무대였으며
+공연 내내 휘몰아치는 퍼포먼스에 
+정신을 차리기 힘들 정도였는데요
+
+다음날 공연의 프리뷰 형식임에도 불구하고
+각 팀들의 열정, 파워가 고스란히 느껴진 만큼
+대구 축제 파워풀대구 페스티벌의 기대가 
+한껏 올라가는 순간이었답니다!
+</p>
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA1MjRfMTcw/MDAxNzE2NTMxNjY0ODUz.o719vaZKTr6qtAPrwntZ28f-3szMdi6L70RHlgM1d5gg.AzsI3t8pDRn0IBX8X3GDpddUIr3-SUvWUAyOOwkEkQQg.JPEG/%EC%82%AC%EC%A7%8418.jpg?type=w800" alt="Example Image" width="500" height="300">
+    </div>
+    
+    <div>
+           <script>
+        function searchHighlight() {
+            const searchInput = document.getElementById('search-input').value.trim();
+            if (searchInput === '') return;
+
+            const content = document.querySelector('.content');
+            const regex = new RegExp(`(${searchInput})`, 'gi');
+            content.innerHTML = content.innerHTML.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>
+</p>
+    </div>
+    
+    <div id="content2">
+        <h2>2024 대구 약령시한방문화축제</h2>
+        <p>대구 남성로와 동성로 일대에는 시장 안 가게들의 7~80%가 약재와 관련되어 약전골목이라 불리는 곳이 있습니다 현재까지도 전국에서 한약재를 찾으러 이곳 대구의 약전골목을 찾는다는 말이 있을 정도인데요
+
+약전골목에서 매년 진행하는 대구 축제 약령시한방문화축제를 소개해 드리겠습니다!대구 축제 약령시한방축제는 1978년 제1회 달구벌 축제의 일환으로 시작되어 현재까지도 매년 축제를 진행하고 있는데요
+
+오래된 축제인 만큼 대구약령시한방문화축제에서는 다양한 볼거리와 체험거리가 충분했답니다
+올해 2024년 한방축제는 지난 5월 8일부터 5일간 진행되었습니다!
+
+이번 축제는 한의약이라는 다소 올드한 콘텐츠에 최신 문화 트렌드를 접목해 '힙전골목 1658'을 주제로 축제를 진행하였으며 5일의 기간 동안 13만여 명의 관광객이 방문하여 성황리에 폐막했습니다
+
+한방문화축제 약전골목에 들어서자마자 보이는 건 약초 포레스트였습니다 약초 포레스트에서는 약초들의 실물과 함께 그림, 학명, 약용부위, 효능이 상세하게 적혀있습니다
+
+처음 보고 낯선 약재도 있지만 산수유 같은 우리에게 익숙한 약재들도 있어 보는 재미가 쏠쏠했답니다
+
+한방축제에서는 기존 약전골목에서 오랜 기간 약재를 다루는 가게에서 직접 약재를 구매할 수 있는 것도 큰 매력이랍니다 : )
+
+이번 축제에서는 '한국한의약진흥원'에 대해서도 처음 알게 되었습니다 원외탕전실에서 조제된 한약이 인증받은 시설인지 관리하는 기관으로 기관이 하는 업무를 시민에게 알리기 위해한방축제를 찾은 모습이었습니다.
+축제 기간 동안 약령 골목에서는 개막식으로 시작해 노래자랑, 좀비스트릿, 한방 이벤트와 같은 다양한 공연과 한의체험센터, 한방 놀이터, 약술 만들기 같은 유, 무료 체험도 즐길 수 있었습니다
+
+내년 5월에도 대구 축제 한방문화축제를 진행할 예정이니 올해 못 가신 분들은 내년에 방문해 보시는 것도 좋을 것 같습니다!
+</p>
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA1MjJfMTc5/MDAxNzE2MzU5NDYwODM0.oc0Zp_7qkn13vK8bNQka2JfnVv5lsdPfsfzF524JuPgg.JqqD4YfHmrONMMUBSUUbIVA28ZeCUMDQRIc_fLXeGg8g.JPEG/%EC%82%AC%EC%A7%8401.jpg?type=w800" height="300">    </div>
+
+
+
+
+<p>이 외에도 앞산 크리스마스 축제, 2024 대구마라톤 대회등 여러가지 행사 및 축제가 진행되고 있습니다!!
+ 자세한 내용은 <span class="link" onclick="window.open('https://m.blog.naver.com/PostList.naver?blogId=daegu_news&tab=1')">대구광역시 중구청 블로그</span>에서 확인하세요.</p>
+      <script>
+        function searchHighlight() {
+            const searchInput = document.getElementById('search-input').value.trim();
+            if (searchInput === '') return;
+
+            const content = document.querySelector('.content');
+            const regex = new RegExp(`(${searchInput})`, 'gi');
+            content.innerHTML = content.innerHTML.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>
+
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
